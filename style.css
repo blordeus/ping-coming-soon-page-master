@@ -56,6 +56,28 @@ form {
   position: relative;
 }
 
+form.error input {
+  border: 2px solid var(--light-red);
+}
+
+form.error .error-text {
+  position: absolute;
+  top: 100%;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: var(--light-red);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.invalid-feedback {
+  color: var(--light-red);
+  font-weight: 400;
+  font-style: italic;
+  transform: translateY(-10px);
+  font-family: inherit;
+}
+
 form input {
   width: 100%;
   padding: 8px;
@@ -76,7 +98,7 @@ form input::placeholder {
 
 button {
   width: 100%;
-  padding: 8px;
+  padding: 4px;
   background-color: var(--blue);
   font-family: inherit;
   border: 2px solid var(--blue);
@@ -148,5 +170,11 @@ button:hover {
   }
   .showcase img {
     width: 600px;
+  }
+  .invalid-feedback {
+    position: absolute;
+    right: 30%;
+    top: 100%;
+    transform: translateY(0.5px);
   }
 }/*# sourceMappingURL=style.css.map */
