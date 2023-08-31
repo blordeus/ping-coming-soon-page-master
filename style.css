@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --blue: hsl(223, 87%, 63%);
+  --light-red: hsl(354, 100%, 66%);
+  --pale-blue: hsl(223, 100%, 88%);
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
