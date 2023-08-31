@@ -35,13 +35,25 @@ ul {
   font-weight: 300;
 }
 
-.heading h1 span {
+.heading h1 strong {
   font-weight: 700;
+}
+
+.heading p {
+  font-size: 20px;
+  color: var(--dark-gray);
+  font-weight: 300;
 }
 
 form {
   width: 300px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
 }
 
 form input {
@@ -63,12 +75,18 @@ form input::placeholder {
 }
 
 button {
-  width: 300px;
+  width: 100%;
   padding: 8px;
   background-color: var(--blue);
   font-family: inherit;
   border: 2px solid var(--blue);
+  transition: background-color 0.4s;
+  box-shadow: 0px 0px 20px --blue;
+}
+
+button:hover {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .gray-color {
@@ -77,6 +95,11 @@ button {
 
 .showcase {
   padding: 50px 20px 80px;
+}
+
+.icons img {
+  width: 30px;
+  margin: 0 5px;
 }
 
 .icons ul {
@@ -88,6 +111,13 @@ button {
 .icons ul li {
   margin: 0 20px;
   color: var(--blue);
+  padding: 10px;
+}
+
+.icons ul li:hover {
+  border-radius: 50%;
+  background-color: var(--blue);
+  color: white;
 }
 
 .copyright {
@@ -103,19 +133,18 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 700px) {
+@media only screen and (min-width: 700px) {
   .heading h1 {
     font-size: 36px;
   }
-  .heading form {
+  form {
+    flex-direction: row;
     width: auto;
-  }
-  form input, button {
-    width: auto;
-    padding: 12px 20px;
+    gap: 10px;
   }
   button {
-    width: 150px;
+    width: 50%;
+    margin-left: 20px;
   }
   .showcase img {
     width: 600px;
